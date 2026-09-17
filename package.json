@@ -9,10 +9,10 @@
     "test": "node .tools/test-form-helpers.mjs && node .tools/test-form-fields-match.mjs"
   },
   "dependencies": {
-    "lucide-react": "^0.454.0",
-    "next": "^14.2.15",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "lucide-react": "0.454.0",
+    "next": "14.2.35",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
   },
   "devDependencies": {
     "@types/node": "^20",
