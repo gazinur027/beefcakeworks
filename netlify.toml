@@ -1,0 +1,15 @@
+﻿# Netlify build configuration for the Beefcake Works landing page.
+# The site is a plain static export (next.config.mjs -> output: "export"),
+# so we build with Next.js and publish the "out" folder.
+# Auto-deploy: every push to the production branch rebuilds the site.
+
+[build]
+  command = "npm run build"
+  publish = "out"
+
+[build.environment]
+  # Keep Node version stable between local dev and Netlify builds.
+  NODE_VERSION = "20"
+
+# Netlify Forms works with static HTML: the form is detected at build time
+# from the generated pages (data-netlify="true" + hidden form-name input).

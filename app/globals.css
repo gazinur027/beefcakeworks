@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-white text-slate-800 antialiased;
+}
+
+/* Comfortable tap targets for iPhone users */
+input,
+select,
+textarea,
+button {
+  font-size: 16px; /* prevents iOS auto-zoom on focus */
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl bg-brand-500 px-6 py-4 text-lg font-bold text-white shadow-cta transition-transform duration-150 active:scale-95 hover:bg-brand-600 focus:outline-none focus:ring-4 focus:ring-brand-200;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl bg-white/10 px-6 py-4 text-lg font-bold text-cream-100 ring-2 ring-cream-100/70 backdrop-blur-sm transition-colors duration-150 hover:bg-white/20 active:scale-95 focus:outline-none focus:ring-4 focus:ring-white/40;
+  }
+
+  .field-label {
+    @apply mb-1.5 block text-sm font-semibold text-pine-900;
+  }
+
+  .field-input {
+    @apply w-full rounded-xl border-2 border-slate-200 bg-white px-4 py-3.5 text-slate-800 placeholder:text-slate-500 focus:border-brand-500 focus:outline-none focus:ring-4 focus:ring-brand-100 transition-colors;
+  }
+
+  .field-input-error {
+    @apply border-red-400 focus:border-red-500 focus:ring-red-100;
+  }
+}
