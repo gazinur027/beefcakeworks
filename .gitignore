@@ -16,3 +16,7 @@ next-env.d.ts
 out.zip
 .dev.log
 .dev.err.log
+
+# secrets (local API tooling only)
+.env
+.env.local
