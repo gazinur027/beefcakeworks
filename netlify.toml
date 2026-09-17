@@ -1,4 +1,4 @@
-﻿# Netlify build configuration for the Beefcake Works landing page.
+# Netlify build configuration for the Beefcake Works landing page.
 # The site is a plain static export (next.config.mjs -> output: "export"),
 # so we build with Next.js and publish the "out" folder.
 # Auto-deploy: every push to the production branch rebuilds the site.
